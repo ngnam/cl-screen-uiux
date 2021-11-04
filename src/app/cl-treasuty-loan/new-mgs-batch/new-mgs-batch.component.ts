@@ -18,12 +18,16 @@ export class NewMgsBatchComponent implements OnInit {
         label: 'Email address',
         placeholder: 'Enter email',
         required: true,
-      }
+      },
     }
   ];
 
   onSubmit(model) {
     console.log(model);
+  }
+
+  onModelChange(e) {
+    console.log(`onModelChange`, e);
   }
   constructor() { }
 
